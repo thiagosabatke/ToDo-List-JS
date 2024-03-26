@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+header,
+main,
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho {
+    background-color: whitesmoke;
+    height: 10vh;
+}
+
+.div_cabecalho {
+    margin: 10px;
+    padding: 10px;
+}
+
+.conteudo_cabecalho {
+    font-size: 3em;
+}
+
+.conteudo_principal {
+    height: 80vh;
+}
+
+section {
+    background-color: whitesmoke;
+    width: 60vw;
+    height: 75vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(141, 141, 141, 0.678);
+}
+
+.div_conteudo_principal {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_conteudo_principal {
+    font-size: 2em;
+}
+
+.texto_conteudo_principal button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(180, 180, 180);
+}
+
+.texto_conteudo_principal button:hover {
+    cursor: pointer;
+}
+
+.div_lista_tarefas {
+    height: 80%;
+}
+
+.div_lista_tarefas ul {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.div_resetar {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_resetar {
+    border: none;
+    background-color: rgb(180, 180, 180);
+    height: 25px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.botao_resetar:hover {
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: whitesmoke;
+    height: 10vh;
+    align-items: center;
+}
+
+.link_rodape {
+    text-decoration: none;
+    color: black;
+}
+
+.link_rodape:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(71, 71, 71);
+}
+
+ul li button {
+    border: none;
+    background-color: rgb(180, 180, 180);
+    width: 80px;
+    border-radius: 10px;
+    height: 15px;
+}
+
+.tabela li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

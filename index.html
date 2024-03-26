@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="t-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="div_cabecalho">
+        <h1 class="conteudo_cabecalho">Lista de Tarefas</h1>
+      </div>
+    </header>
+    <main class="conteudo_principal">
+      <section>
+        <div class="div_conteudo_principal">
+          <p class="texto_conteudo_principal">
+            Digite uma tarefa:
+            <input type="text" name="tarefa_input" id="tarefa_input" />
+            <button onclick="AdicionarTarefa()">Adicionar</button>
+          </p>
+        </div>
+        <div class="div_lista_tarefas">
+          <ul class="tabela"></ul>
+        </div>
+        <div class="div_resetar">
+          <button class="botao_resetar" onclick="ResetarTarefas()">
+            Resetar Tarefas
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p>
+        Developed by <a class="link_rodape" href="#">Thiago Sabatke</a>. © 2024
+        All Rights Reserved.
+      </p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
