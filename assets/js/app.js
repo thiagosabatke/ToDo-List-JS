@@ -39,6 +39,10 @@ function ExibirTarefa() {
         inputEditar.value = tarefa.nome;
         inputEditar.style.display = 'none';
 
+        let botaoOcultar = document.createElement('button');
+        botaoOcultar.textContent = 'Ocultar';
+        botaoOcultar.addEventListener('click', () => OcultarTarefa(index));
+
         let botaoEditar = document.createElement('button');
         botaoEditar.textContent = 'Editar';
         botaoEditar.addEventListener('click', () => EditarTarefa(index, inputEditar));
@@ -47,6 +51,7 @@ function ExibirTarefa() {
         itemLista.appendChild(textoTarefa);
         itemLista.appendChild(inputEditar);
         itemLista.appendChild(botaoEditar);
+        itemLista.appendChild(botaoOcultar);
 
         lista.appendChild(itemLista);
     });
@@ -77,7 +82,14 @@ function EditarTarefa(index, inputEditar) {
     });
 }
 
+function OcultarTarefa(index) {
+    Tarefas.splice(index, 1);
+    ExibirTarefa();
+}
+
 function ResetarTarefas() {
     Tarefas = [];
     ExibirTarefa();
 }
+
+ExibirTarefa();
