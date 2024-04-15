@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="t-br">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="cabecalho">
-      <div class="div_cabecalho">
-        <h1 class="conteudo_cabecalho">Lista de Tarefas</h1>
-      </div>
+    <header>
+      <h1>Lista de Tarefas</h1>
     </header>
-    <main class="conteudo_principal">
-      <section>
-        <div class="div_conteudo_principal">
-          <p class="texto_conteudo_principal">
-            Digite uma tarefa:
-            <input type="text" name="tarefa_input" id="tarefa_input" />
-            <button onclick="AdicionarTarefa()">Adicionar</button>
-          </p>
-        </div>
-        <div class="div_lista_tarefas">
-          <ul class="tabela"></ul>
-        </div>
-        <div class="div_resetar">
-          <button class="botao_resetar" onclick="ResetarTarefas()">
-            Resetar Tarefas
-          </button>
-        </div>
-      </section>
-    </main>
-    <footer class="rodape">
+    <section>
       <p>
-        Developed by <a class="link_rodape" href="#">Thiago Sabatke</a>. © 2024
-        All Rights Reserved.
+        Digite a tarefa: <input type="text" name="tarefa" id="tarefa" />
+        <button class="botao" onclick="adicionarTarefa()">Adicionar</button>
       </p>
-    </footer>
-    <script src="assets/js/app.js"></script>
+      <p>
+        Ocultar tarefas concluidas: <input type="checkbox" name="ocultar" id="ocultar">
+      </p>
+      <ul id="listaTarefas" class="lista"></ul>
+    </section>
+    <script src="ambiente.js"></script>
   </body>
 </html>

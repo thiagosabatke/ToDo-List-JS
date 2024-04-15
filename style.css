@@ -1,0 +1,64 @@
+body{
+    background-color: lightblue;
+    font: normal 16px Arial;
+}
+
+header{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+}
+
+button{
+    background-color: lightblue;
+    border: 0px;
+    padding: 5px;
+    width: 70px;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit{
+    background-color: white;
+    padding: 5px;
+    width: 60px;
+    color: green;
+    border: 1px solid black;
+}
+
+.del{
+    background-color: white;
+    padding: 5px;
+    width: 60px;
+    color: red;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+}
+
+.lista li {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.lista li input[type="checkbox"] {
+    margin-right: 10px;
+    
+}
+
+.lista li button {
+    margin-left: 10px;
+}
